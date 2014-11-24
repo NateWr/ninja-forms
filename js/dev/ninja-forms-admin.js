@@ -90,11 +90,7 @@ jQuery(document).ready(function($) {
 	/* * * General JS * * */
 
 
-	var datepicker_args = {};
-	if ( typeof ninja_forms_settings.date_format !== 'undefined' && ninja_forms_settings.date_format !== '' ) {
-		datepicker_args.dateFormat = ninja_forms_settings.date_format;
-	}
-	$(".ninja-forms-admin-date").datepicker( datepicker_args );
+	$(".ninja-forms-admin-date").datepicker( ninja_forms_settings.datepicker_args );
 
 	//Select All Checkbox
 	$(".ninja-forms-select-all").click(function(){
